@@ -1,7 +1,20 @@
 {
   "version": "19.0.0",
   "files": {
-    "5bff9820dd8313247c764e59c543cdcc366d80e7e8005fa94fcd876486af51df": {
+    "69d58378efca5992173b10a0d191aeba7396a88b768a2bc2ff40b39b45add66c": {
+      "source": {
+        "path": "asset.69d58378efca5992173b10a0d191aeba7396a88b768a2bc2ff40b39b45add66c",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "69d58378efca5992173b10a0d191aeba7396a88b768a2bc2ff40b39b45add66c.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "9c95c213dd6dee2a96dae259b7a652ccec0fbe879b3068387d490db60ed7cda0": {
       "source": {
         "path": "SpaceStack.template.json",
         "packaging": "file"
@@ -9,7 +22,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "5bff9820dd8313247c764e59c543cdcc366d80e7e8005fa94fcd876486af51df.json",
+          "objectKey": "9c95c213dd6dee2a96dae259b7a652ccec0fbe879b3068387d490db60ed7cda0.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
