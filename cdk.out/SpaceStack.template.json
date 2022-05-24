@@ -331,7 +331,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17.zip"
+     "S3Key": "1955b9381c6b1405402024a253880eb00db97c266b4c2dbcc1a859f4a48d4a21.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -353,7 +353,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceStack/helloNodeLambda/Resource",
-    "aws:asset:path": "asset.62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17",
+    "aws:asset:path": "/Users/mikaeelk/Desktop/space-finder-backend",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }

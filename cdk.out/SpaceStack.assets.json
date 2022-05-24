@@ -1,20 +1,20 @@
 {
   "version": "19.0.0",
   "files": {
-    "62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17": {
+    "1955b9381c6b1405402024a253880eb00db97c266b4c2dbcc1a859f4a48d4a21": {
       "source": {
-        "path": "asset.62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17",
+        "path": "/Users/mikaeelk/Desktop/space-finder-backend",
         "packaging": "zip"
       },
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17.zip",
+          "objectKey": "1955b9381c6b1405402024a253880eb00db97c266b4c2dbcc1a859f4a48d4a21.zip",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
     },
-    "68b6107cf515d5e644a3626c4f69b41c0a177e27bce4ede5794be6476805c3eb": {
+    "1e19e3f47c3b40a395e1d83e3e517e0b9dfc40fe54df0dfcd777e2adb0e16ba2": {
       "source": {
         "path": "SpaceStack.template.json",
         "packaging": "file"
@@ -22,7 +22,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "68b6107cf515d5e644a3626c4f69b41c0a177e27bce4ede5794be6476805c3eb.json",
+          "objectKey": "1e19e3f47c3b40a395e1d83e3e517e0b9dfc40fe54df0dfcd777e2adb0e16ba2.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
