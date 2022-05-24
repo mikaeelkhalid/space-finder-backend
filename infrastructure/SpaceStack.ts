@@ -7,9 +7,13 @@ import {
 } from 'aws-cdk-lib/aws-lambda';
 import { join } from 'path';
 import { LambdaIntegration, RestApi } from 'aws-cdk-lib/aws-apigateway';
+import { GenericTable } from './GenericTable';
 
 export class SpaceStack extends Stack {
   private api = new RestApi(this, 'SpaceApi');
+
+  // create a dynamo table for the space
+  private spaceTable = new GenericTable('SpaceTable', 'spaceid', this);
 
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
