@@ -300,6 +300,30 @@
     "aws:cdk:path": "SpaceStack/helloNodeLambda/ServiceRole/Resource"
    }
   },
+  "helloNodeLambdaServiceRoleDefaultPolicy53236FAC": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "s3:ListAllMyBuckets",
+       "Effect": "Allow",
+       "Resource": "*"
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "helloNodeLambdaServiceRoleDefaultPolicy53236FAC",
+    "Roles": [
+     {
+      "Ref": "helloNodeLambdaServiceRole2ED6B642"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "SpaceStack/helloNodeLambda/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
   "helloNodeLambda065ED102": {
    "Type": "AWS::Lambda::Function",
    "Properties": {
@@ -307,7 +331,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "d48f3c1f136619122a33a9fe16621617c93817c63b1c93dfba7c6d6097f0906d.zip"
+     "S3Key": "62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17.zip"
     },
     "Role": {
      "Fn::GetAtt": [
@@ -324,11 +348,12 @@
     "Runtime": "nodejs14.x"
    },
    "DependsOn": [
+    "helloNodeLambdaServiceRoleDefaultPolicy53236FAC",
     "helloNodeLambdaServiceRole2ED6B642"
    ],
    "Metadata": {
     "aws:cdk:path": "SpaceStack/helloNodeLambda/Resource",
-    "aws:asset:path": "asset.d48f3c1f136619122a33a9fe16621617c93817c63b1c93dfba7c6d6097f0906d",
+    "aws:asset:path": "asset.62cc96e04038dfb664e647bb23182018c004f62f676af655faa596d30c441d17",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -336,7 +361,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WQy07DMBBFv6V7d6CliHVaxI6HCvtoYpvUSWxHGZsqivLvjGOqltU9cz1Pb2H7CPcrPNNaqnbdmQqmz4CyFWyVE/amxqDPOMJ01BSK3ojDt7vBQkofXRDPuu/8aDUjuzcRd6t18jJwqY+D1Huka/DXM/OrDievkpVpFgYtj/ddzmOdRYe2UggTGx96sIbIeJeeX6KTgXkWanRoveKDvrDKtQtcikvnlW4I3ha51Al6KJFIB4IiCcewj7LVIW08py7vMfQxXJdf8tJ1xtX/LmE+eKdM3ieNg4bufjY72DzBbtWQMeuBP89YDcesv4PZipKQAQAA"
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WQy07DMBBFv6V7d6CliHVaxI6HCvvIsYd0ktiOMjZVFOXfsWOqltU9czUPX29h+wj3K3nmtdLtuqMKpk8vVSuiVU6yp1p6PMsRpiOyL3oSh297g4VSLlgvnrHv3GgwYnRvqritxuRliKMuDAr3kq/F387Mr+hPTicr0yxImnjedbkv6YfrSI2pzDSLTppKS5iShYMhZnI2NbwEq3zkWejRSuN0TPglq7xsgctwaZ3GhuFtkcuc4IdSMqNnKJLEGvZBtehThDlteQ++D/6aZulLccnW/6JFPjirKb8nnYOG7342O9g8wW7VMNF6iL9JBuGY9ReKRlAHoQEAAA=="
    },
    "Metadata": {
     "aws:cdk:path": "SpaceStack/CDKMetadata/Default"
