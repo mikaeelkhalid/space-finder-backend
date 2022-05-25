@@ -1,5 +1,15 @@
-@endpoint = https://z0w657t4u2.execute-api.us-east-1.amazonaws.com/prod
+@endpoint = https://qzamngh7b9.execute-api.us-east-1.amazonaws.com/prod
 
 GET {{endpoint}}/hello/
+########################################################################
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{
+     "location": "This is a location",
+    "name": "My Space"
+   
+}
 ########################################################################
 
